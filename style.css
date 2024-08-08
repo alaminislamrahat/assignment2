@@ -583,24 +583,129 @@ form select {
     padding: 10px 0;
 }
 
-.footer-content{
+.footer-content {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: center;
     padding: 100px 0;
     gap: 20px;
 }
-.content1{
+
+.content1 {
     margin: 0 auto;
 }
-.content2{
+
+.content2 {
     margin: 0 auto;
+}
+
+
+
+/* package  */
+
+.package-area{
+    background-color: black;
+    padding-bottom: 50px;
+}
+
+.package-card {
+    background-color:#222222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+}
+
+.package-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: rgb(230, 83, 60);;
+}
+
+.package-description {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.package-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.package-features li {
+    /* background-color: #f9f9f9; */
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.package-price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color:rgb(230, 83, 60);
+}
+
+.purchase-button {
+    background-color:rgb(230, 83, 60);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.purchase-button:hover {
+    background-color: #d35400;
+}
+
+.package-parent{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 0 auto;
+    
+}
+
+.package-header h1{
+    text-align: center;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 50px;
 }
 
 /* mobile responsive  */
 
 @media screen and (max-width : 576px) {
+
+    /* package  */
+
+    .package-header h1{
+        text-align: center;
+        color: #ffffff;
+        font-size: 40px;
+        font-weight: 900;
+        margin-bottom: 50px;
+    }
+
+    .package-parent{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        margin: 0 auto;
+        
+    }
 
     .hero-items h1 {
         color: rgb(255, 255, 255);
@@ -830,19 +935,19 @@ form select {
         /* height: 150px; */
         border-radius: 20px;
         object-fit: cover;
-    
+
     }
 
     /* footer  */
-    .footer-content{
+    .footer-content {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
-      
+        grid-template-columns: repeat(1, 1fr);
+
         align-items: center;
         justify-content: center;
         padding: 10px 0;
         gap: 20px;
     }
 
-    
+
 }
